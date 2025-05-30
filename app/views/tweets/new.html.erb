@@ -5,6 +5,10 @@
     <%= f.label :body %>
     <%= f.text_field :body, :size => 140 %>
   </div>
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
   <%= f.submit "Tweetする" %>
 <% end %>
 <%= link_to "Tweet一覧に戻る", tweets_path %>
